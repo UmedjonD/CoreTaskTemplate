@@ -78,7 +78,7 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
     public void saveUser(String name, String lastName, byte age)  {
         PreparedStatement preparedStatement = null;
         PreparedStatement preparedStatement2 = null;
-        String sql = "Insert into testuser.user (name, lastName, age) values(?, ?, ?)";
+        String sql = "Insert into user (name, lastName, age) values(?, ?, ?)";
         String query = "select * from user";
         ResultSet rs;
 
@@ -200,7 +200,7 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
 
         PreparedStatement preparedStatement = null;
 
-        String sql = "delete from testuser.user";
+        String sql = "delete from user";
 
         try {
             preparedStatement = connection.prepareStatement(sql);
