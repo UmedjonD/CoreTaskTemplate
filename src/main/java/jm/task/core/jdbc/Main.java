@@ -39,9 +39,6 @@ public class Main {
 //        userService.dropUsersTable();
 //        System.out.println("дропнули таблицу успешно"); // работает
 
-        /**
-         * тесты пока не проходят
-         * */
 
     }
 }
