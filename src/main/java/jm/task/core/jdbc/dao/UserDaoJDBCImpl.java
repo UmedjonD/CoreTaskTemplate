@@ -7,13 +7,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoJDBCImpl extends Util implements UserDao {
+public class UserDaoJDBCImpl implements UserDao {
 
-    Connection connection;
+    private Connection connection;
 
     {
         try {
-            connection = getConnBD();
+            connection = new Util().getConnBD();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
